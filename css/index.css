@@ -1,0 +1,191 @@
+/*类别begin*/
+.collection{
+	width: 100%;
+	height: auto;
+}
+.collection .head{
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;	
+	background: #2bbaff;
+}
+.collection  .head  .icon{
+	display: block;
+	width: 10%;
+	height: 40px;
+	background: url(../img/info-icon.png)no-repeat;
+	background-position: -145px -30px;
+	background-size: 500px 800px;
+}
+.collection  .head .msg{
+	width: 80%;
+	color: #FFFFFF;
+	font-size: 1em;
+}
+.collection  .head .close{
+	display: block;
+	width: 10%;
+	height: 40px;
+	background: url(../img/info-icon.png)no-repeat;
+	background-position: -234px -30px;
+	background-size: 500px 800px;
+}
+.collection .category{
+	width: 100%;
+}
+.collection .category .item{
+	width: 100%;
+}
+
+.collection .category  i{
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin-left: 6%;
+	background: url(../img/info-icon.png)no-repeat;
+	background-size: 500px 900px;
+}
+.collection .category  .basic{
+	background-position: -60px -174px;
+}
+.collection .category  .plant{
+	background-position: -206px -174px;
+}
+.collection .category  .assets{
+	background-position: -352px -174px;
+}
+.collection .category  .loan{
+	background-position: -60px -332px;
+}
+.collection .category  .additional{
+	background-position: -206px -332px;
+}
+
+.collection .category  span{
+	font-size: 1em;
+	margin-left: 12%;
+	color: #333333;
+}
+/*类别结束end*/
+/*基本信息begin*/
+.basic-info{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.basic-info .hight{
+	height: 40px;
+    line-height: 40px;
+}
+.basic-info  .adds-submit{
+	color: #fff;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    background: #FFA200;
+    display: block;
+    border-radius: 10px;
+}
+.basic-info .text{
+	color: #333333;
+	font-size: 1em;
+    margin-bottom: 0.3em;
+    margin-top: 0.77em;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+..basic-info .fl{float: left;}
+..basic-info .ml27{margin-left: 27%;}
+..basic-info .flwd{width: 40%;}
+..basic-info .bg{background: #F8F8F8;}
+..basic-info .sizecl{color: #04BE02;}
+..basic-info .btn{width: 100%;}
+/*基本信息end*/
+
+.weui-gallery__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 60px;
+    left: 0;
+    background: center center no-repeat;
+    background-size: contain;
+}
+
+/*登录info-login begin*/
+.info-login{
+	width: 100%;
+}
+.info-login .login-mask{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    opacity: 0.9;
+    z-index: 100;
+}
+.info-login .login-mask .phone-login{
+	width: 80%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    background: white;
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+}
+.info-login .login-mask .phone-login .login-head{
+	width: 100%;
+	height: 40px;
+	line-height: 30px;
+	font-size: 1.4em;
+	color: #006dec;
+	border-bottom: 2px solid #DDDDDD;
+}
+.info-login .login-mask .phone-login .login-cnt .phone-box{
+	width: 100%;
+	height: 40px;
+	margin: 20px 0;
+	background: #F7F8FB;
+	border-radius: 5px;
+	border: 1px solid #DDDDDD;
+}
+.info-login .login-mask .phone-login .login-cnt .phone-box .title{
+	width: 30%;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	color: #333333;
+	text-align: center;
+	font-size: 1em;
+}
+.info-login .login-mask .phone-login .login-cnt .phone-box .tel-input{
+	width: 70%;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+.info-login .login-mask .phone-login .login-btn{
+	width: 100%;
+	overflow: hidden;
+}
+.info-login .login-mask .phone-login .login-btn .btn{
+	width: 45%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.2em;
+	color: #FFFFFF;
+	border-radius: 10px;	
+}
+.info-login .login-mask .phone-login .login-btn .login-btn-on{
+	float: left;
+	margin-right: 10%;
+	background: #bfbfbf;
+}
+.info-login .login-mask .phone-login .login-btn .login-btn-ok{
+	background: #006dec;
+}
+/*登录info-login end*/

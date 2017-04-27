@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title>首页</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/weui.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<body>
+		<div class="collection">
+			<div class="weui-cell head" >
+				<div class="icon fl"></div>
+				<div class="msg fl">
+					您的基本信息还没填写完成，请补充完整。
+				</div>
+				<div class="close fr"></div>
+			</div>
+			<div class="weui-cells category">
+				<div class="weui-cell">
+					<div class="weui-flex item">
+			            <div class="weui-flex__item">
+			            	<div class="placeholder">
+			            	    <a href="basic-info-new.html">
+									<i class="basic"></i>
+									<span >基本信息</span>
+								</a>
+			            	</div>
+			            </div>
+			   
+			            <div class="weui-flex__item">
+			            	<div class="placeholder">
+			            		<a href="javascript:;">
+									<i class="plant"></i>
+									<span >种植信息</span>
+								</a>
+			            	</div>
+			            </div>
+			            <div class="weui-flex__item">
+			            	<div class="placeholder">
+			            		<a href="javascript:;">
+									<i class="assets"></i>
+									<span >资产信息</span>
+								</a>
+			            	</div>
+			            </div>
+			        </div>
+				</div>
+				<div class="weui-cell">
+					 <div class="weui-flex item">
+			            <div class="weui-flex__item">
+			            	<div class="placeholder">
+			            	   <a href="javascript:;">
+									<i class="loan"></i>
+									<span >贷款信息</span>
+								</a>	
+			            	</div>
+			            </div>
+			   
+			            <div class="weui-flex__item">
+			            	<div class="placeholder">
+			            		<a href="javascript:;">
+									<i class="additional"></i>
+									<span >附加资料</span>
+								</a>
+			            	</div>
+			            </div>
+			            <div class="weui-flex__item">
+			            	<div class="placeholder">
+			            		
+			            	</div>
+			            </div>
+			        </div>
+				</div>		       
+			</div>		   		  
+		</div>
+		
+		<div class="mask">
+			<div class="phone-login">
+				<div class="login-head">
+					请输入手机号
+				</div>
+				<div class="login-cnt">
+					<div class="phone-box">
+						<div class="title">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+		$(function(){
+			$(".close").click(function(){
+				$(".collection .head").hide();
+			})
+		})
+	</script>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title>基本信息</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/basic-info.css" />
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/weui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/weui-1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/adddate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/imgUp.js" type="text/javascript" charset="utf-8"></script>
+
+	<body>
+
+		<div class="basic-info">
+			<form id="form">
+				<div class="weui_cells_form">
+					<div class="weui_cells">
+						<div class="weui_cells_title padding10">
+							真实姓名
+							<span class="stars-icon">*</span>
+						</div>
+						<div class="well_cell operation-box">
+							<div class="weui-cell__hd fl">
+								<div class="name-icon i"><img src=""/></div>
+							</div>
+							<div class="weui-cell__bd fl ">
+								<input class="weui-input size18 paddingleft10" placeholder="请输入真实姓名" type="text" datatype="*" errormsg="请填写用户名">
+								<span class="Validform_checktip"></span>
+							</div>
+						</div>
+
+					</div>
+					<div class="weui_cells">
+						<div class="weui_cells_title padding10">
+							手机号码
+							<span class="stars-icon">*</span>
+						</div>
+						<div class="well_cell operation-box">
+							<div class="weui-cell__hd fl">
+								<div class="phone-icon i"><img src=""/></div>
+							</div>
+							<div class="weui-cell__bd fl ">
+								<input class="weui-input size18 paddingleft10" type="tel" placeholder="请输入手机号码" datatype="m" errormsg="输入正确的手机号码" name="phone">
+								<span class="Validform_checktip"></span>
+							</div>
+						</div>
+					</div>
+					<div class="weui_cells">
+						<div class="weui_cells_title padding10">
+							身份证号码
+							<span class="stars-icon">*</span>
+						</div>
+						<div class="well_cell operation-box">
+							<div class="weui-cell__hd fl">
+								<div class="zj-icon i"><img src=""/></div>
+							</div>
+							<div class="weui-cell__bd fl ">
+								<input class="weui-input size18 paddingleft10" id="IdNumber" name="IdNumber" placeholder="请输入身份证号码" datatype="s6-18" errormsg="输入正确的身份证">
+								<span class="Validform_checktip"></span>
+							</div>
+						</div>
+					</div>
+					<div class="weui_cells">
+						<div class="weui_cells_title padding10">
+							所在地
+							<span class="stars-icon">*</span>
+						</div>
+						<div class="well_cell operation-box">
+							<div class="weui-cell__hd fl">
+								<div class="address-icon i"><img src=""/></div>
+							</div>
+							<div class="weui-cell__bd fl ">
+								<input class="weui-input size18 paddingleft10" id="address" name="address" placeholder="请输入地址" type="text" datatype="*" errormsg="請输入地址">
+								<span class="Validform_checktip"></span>
+							</div>
+						</div>
+					</div>
+					<div class="weui_cells">
+						<div class="weui_cells_title padding10">
+							日期
+							<span class="stars-icon">*</span>
+						</div>
+						<div class="well_cell operation-box">
+							<div class="weui-cell__hd fl">
+								<div class="time-icon i"><img src=""/></div>
+							</div>
+							<div class="weui-cell__bd fl size18 paddingleft10">
+								<input class="weui-input" placeholder="2017-04-19" type="text" onclick="SelectDate(this,'yyyy-MM-dd')">
+							</div>
+						</div>
+					</div>
+					
+					<div class="weui_cells">
+						<div class="weui_cells_title padding10">
+							单选框
+						</div>
+						<div class="weui-cells weui-cells_checkbox magtop0 radio-box">
+				            <label class="weui-cell weui-check__label   radio-list" for="s11">
+				                <div class="weui-cell__hd magleft16">
+				                    <input type="radio" class="weui-check" name="checkbox1" id="s11" checked="checked">
+				                    <i class="weui-icon-checked"></i>
+				                </div>
+				                <div class="weui-cell__bd size18">
+				                    <p>爱惠农大米</p>
+				                </div>
+				            </label>
+				            <label class="weui-cell weui-check__label  radio-list" for="s12">
+				                <div class="weui-cell__hd magleft16">
+				                    <input type="radio" name="checkbox1" class="weui-check" id="s12">
+				                    <i class="weui-icon-checked"></i>
+				                </div>
+				                <div class="weui-cell__bd size18">
+				                    <p>爱惠农玉米</p>
+				                </div>
+				            </label>
+				            <label class="weui-cell weui-check__label  radio-list" for="s13">
+				                <div class="weui-cell__hd magleft16">
+				                    <input type="radio" name="checkbox1" class="weui-check" id="s13">
+				                    <i class="weui-icon-checked"></i>
+				                </div>
+				                <div class="weui-cell__bd size18">
+				                    <p>爱惠农玉米</p>
+				                </div>
+				            </label>
+				        </div>
+					</div>
+					
+					<div class="weui_cells">
+						<div class="weui_cells_title padding10">
+							复选框
+						</div>
+						<div class="checked-box">
+							<div class="well_cell checked-list">
+								<div class="weui-cell__hd piaochecked on_check">
+				                    <input type="checkbox" class="weui-check radioclass" name="checkbox1" id="s111" checked="checked">			             
+				                </div>
+				                <div class="weui-cell__bd size18 ahn-chec">
+				                    <p>爱惠农大米</p>
+				                </div>
+							</div>
+							<div class="well_cell checked-list">
+								<div class="weui-cell__hd piaochecked on_check">
+				                    <input type="checkbox" class="weui-check radioclass" name="checkbox1" id="s111" checked="checked">			             
+				                </div>
+				                <div class="weui-cell__bd size18 ahn-chec">
+				                    <p>爱惠农大米</p>
+				                </div>
+							</div>
+							<div class="well_cell checked-list">
+								<div class="weui-cell__hd piaochecked on_check">
+				                    <input type="checkbox" class="weui-check radioclass" name="checkbox1" id="s111" checked="checked">			             
+				                </div>
+				                <div class="weui-cell__bd size18 ahn-chec">
+				                    <p>爱惠农大米</p>
+				                </div>
+							</div>							
+						</div>					
+					</div>
+					
+					<div class="weui_cells">
+						<div class="weui_cells_title padding10">
+							下拉框
+						</div>
+						<div class="select-box">
+			                <div class="weui-cell__bd">
+			                    <select class="select-list">
+			                        <option value="1">大米</option>
+			                        <option value="2">玉米</option>
+			                        <option value="3">高粱</option>
+			                    </select>
+			                </div>
+			            </div>
+					</div>
+
+					<div class="weui_cells weui-cells_form ">
+						<div class="weui_cells_title padding10">
+							文本框
+						</div>
+						<div class="well_cell textarea-box">
+							<textarea class="textarea" placeholder="请输入文本" rows="5"></textarea>
+						</div>
+					</div>
+					<div class="weui_cells">
+						<div class="weui_cells_title padding10">
+							上传图片
+						</div>
+						<div class="well_cell ">
+							<div class="img-box full">
+								<section class=" img-section">
+									<div class="z_photo upimg-div clear">
+										<section class="z_file fl">
+											<img src="img/a11.png" class="add-img">
+											<input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+										</section>
+									</div>
+								</section>
+							</div>
+							<aside class="mask works-mask">
+								<div class="mask-content">
+									<p class="del-p">您确定要删除图片吗？</p>
+									<p class="check-p"><span class="wsdel-no">取消</span><span class="del-com wsdel-ok">确定</span></p>
+								</div>
+							</aside>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<input class="submit" type="submit" value="提交">
+					</div>
+				</div>
+			</form>
+			
+		</div>
+
+	</body>
+	<script src="js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	    $(function(){			
+	    	$("#Validform_msg").delay(3000).hide(0);    
+            setTimeout(function(){$("#Validform_msg").hide();},2000);
+		})
+		$(function(){
+			$("#form").Validform();
+		})
+        $(function(){
+			$(".piaochecked").on("click",function(){
+//              $(this).hasClass("on_check")? $(this).removeClass("on_check"):$(this).removeClass("on_check")
+                if($(this).hasClass("on_check")){
+                	$(this).removeClass("on_check");
+                	$(this).children().attr('checked',true);
+                }
+                else{
+                	$(this).addClass("on_check");
+                	$(this).removeAttr('checked');
+                    $(this).parent().text();
+                }
+            })
+			
+			 $(".ahn-chec").on("click",function(){
+	            if($(this).prev().hasClass("on_check")){
+	                $(this).prev().removeClass("on_check");
+	                $(this).prev().children().attr('checked',true);
+	            }
+	            else{
+	                $(this).prev().addClass("on_check");
+	                $(this).prev().children().removeAttr('checked');
+	                $(this).prev().parent().text();
+	            }
+	        })
+		})
+        
+	</script>
+
+
+	
+</html>

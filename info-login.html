@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title>首页</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/weui.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/basic-info.css"/>
+	<body>
+		<div class="info-login">
+			<div class="login-mask">
+				<div class="phone-login">
+					<div class="login-head">
+						请输入手机号码
+					</div>
+					<form id="login-from">
+					<div class="login-cnt">
+						<div class="phone-box">
+							<span class="title">手机号码</span>
+							<input class="tel-input" type="tel" placeholder="请输入手机号码" datatype="m" errormsg="输入正确的手机号码" name="phone"  >
+						</div>
+					</div>
+					<div class="login-btn">
+						<button class="btn login-btn-on">取消</button>
+						<button class="btn login-btn-ok">确定</button>
+					</div>
+					</form>
+				</div>
+			</div>		  
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){			
+			$('.login-btn-on').click(function(){
+				$('.info-login .login-mask').hide();
+			})
+			$('.login-btn-ok').click(function(){							
+				$("#login-from").submit(function(e){
+				})								
+			})
+		})
+		$(function(){
+			$("#login-from").Validform();
+			
+		})
+	</script>
+	<style type="text/css">
+		/*登录info-login begin*/
+		.info-login{
+			width: 100%;
+		}
+		.info-login .login-mask{
+		    position: fixed;
+		    top: 0px;
+		    left: 0px;
+		    width: 100%;
+		    height: 100%;
+		    background: #333333;
+		    opacity: 0.9;
+		    z-index: 100;
+		}
+		.info-login .login-mask .phone-login{
+			width: 80%;
+		    position: absolute;
+		    top: 30%;
+		    left: 10%;
+		    background: white;
+		    height: 200px;
+		    text-align: center;
+		    border-radius: 10px;
+		    padding: 15px;
+		}
+		.info-login .login-mask .phone-login .login-head{
+			width: 100%;
+			height: 40px;
+			line-height: 30px;
+			font-size: 1.4em;
+			color: #006dec;
+			border-bottom: 2px solid #DDDDDD;
+		}
+		.info-login .login-mask .phone-login .login-cnt .phone-box{
+			width: 100%;
+			height: 40px;
+			margin: 20px 0;
+			background: #F7F8FB;
+			border-radius: 5px;
+			border: 1px solid #DDDDDD;
+		}
+		.info-login .login-mask .phone-login .login-cnt .phone-box .title{
+			width: 30%;
+			height: 40px;
+			line-height: 40px;
+			float: left;
+			color: #333333;
+			text-align: center;
+			font-size: 1em;
+		}
+		.info-login .login-mask .phone-login .login-cnt .phone-box .tel-input{
+			width: 70%;
+			height: 40px;
+			line-height: 40px;
+			float: left;
+		}
+		.info-login .login-mask .phone-login .login-btn{
+			width: 100%;
+			overflow: hidden;
+		}
+		.info-login .login-mask .phone-login .login-btn .btn{
+			width: 45%;
+			height: 40px;
+			line-height: 40px;
+			font-size: 1.2em;
+			color: #FFFFFF;
+			border-radius: 10px;	
+		}
+		.info-login .login-mask .phone-login .login-btn .login-btn-on{
+			float: left;
+			margin-right: 10%;
+			background: #bfbfbf;
+		}
+		.info-login .login-mask .phone-login .login-btn .login-btn-ok{
+			background: #006dec;
+		}
+		/*登录info-login end*/
+	</style>
+</html>
+
